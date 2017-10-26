@@ -9,11 +9,15 @@ import {
   getDistance
 } from '../lib/utils.js'
 
-const PLAYER_NAME = 'Player'
+const PLAYER_NAME = 'Space Evaders'
 
-const PLAYER_STYLE = 3
+const PLAYER_STYLE = 6
 
 const chooseMove = (playerState, enemiesStates, gameEnvironment) => {
+  // console.log(enemiesStates);
+
+  // TODO: Insert awesome player logic
+
   const shouldShootPlayer = canKill(playerState, enemiesStates) && playerState.ammo
   if (shouldShootPlayer) {
     return 'shoot'

@@ -9,9 +9,9 @@ import {
   getDistance
 } from '../lib/utils.js'
 
-const PLAYER_NAME = 'COM1'
+const PLAYER_NAME = 'Player Name 1'
 
-const PLAYER_STYLE = 3
+const PLAYER_STYLE = 2
 
 const chooseMove = (playerState, enemiesStates, gameEnvironment) => {
   const shouldShootPlayer = canKill(playerState, enemiesStates) && playerState.ammo
@@ -37,7 +37,7 @@ const chooseMove = (playerState, enemiesStates, gameEnvironment) => {
 module.exports = {
   info: {
     name: PLAYER_NAME,
-    style: PLAYER_STYLE,
+    style: PLAYER_STYLE
   },
   ai: chooseMove
 }

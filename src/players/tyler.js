@@ -9,9 +9,9 @@ import {
   getDistance
 } from '../lib/utils.js'
 
-const PLAYER_NAME = 'COM1'
+const PLAYER_NAME = 'tyler'
 
-const PLAYER_STYLE = 3
+const PLAYER_STYLE = 8
 
 const chooseMove = (playerState, enemiesStates, gameEnvironment) => {
   const shouldShootPlayer = canKill(playerState, enemiesStates) && playerState.ammo
