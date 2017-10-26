@@ -8,4 +8,5 @@ module.exports = {
   7: require('./players/toni.js'),
   8: require('./players/tyler.js'),
   9: require('./players/zero.js'),
+  10: require('./players/paymark.js')
 };
